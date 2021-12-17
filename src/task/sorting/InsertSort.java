@@ -1,8 +1,8 @@
 package task.sorting;
 
-public class InsertSort implements SortingFunction {
+public class InsertSort implements Sorting {
     @Override
-    public double[] InsertFunction(double[] arrayIn) {
+    public double[] SortingFunction(double[] arrayIn) {
         for (int i = 0; i < arrayIn.length; i++) {
             double value = arrayIn[i];
             int j = i - 1;
