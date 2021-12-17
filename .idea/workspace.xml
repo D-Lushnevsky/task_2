@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f583b0-137b-4324-9a68-25f38027aaa6" name="Changes" comment="" />
+    <list default="true" id="0ceab12b-b57c-4ca8-8376-94c2108ac8f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/task/sorting/GeneratingMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/FirstIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/FirstIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/InsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,13 +72,14 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestSorting" />
+        <item itemvalue="Application.TestSorting" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="86f583b0-137b-4324-9a68-25f38027aaa6" name="Changes" comment="" />
+      <changelist id="0ceab12b-b57c-4ca8-8376-94c2108ac8f4" name="Changes" comment="" />
       <created>1639642806201</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -77,6 +88,7 @@
       <workItem from="1639645432523" duration="3322000" />
       <workItem from="1639708078798" duration="824000" />
       <workItem from="1639710450797" duration="6567000" />
+      <workItem from="1639720073486" duration="7502000" />
     </task>
     <servers />
   </component>

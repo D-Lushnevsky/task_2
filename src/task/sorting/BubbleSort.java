@@ -3,7 +3,7 @@ package task.sorting;
 public class BubbleSort implements Sorting {
     boolean isSorted = false;
     @Override
-    public double[] SortingFunction(double[] arrayIn) {
+    public double[] sortingFunction(double[] arrayIn) {
         while(!isSorted) {
             isSorted = true;
 
