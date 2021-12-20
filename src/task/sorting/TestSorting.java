@@ -7,20 +7,22 @@ public class TestSorting {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Chose sorting function (bubble or insert)");
+        System.out.println("Chose array generating mode (manual or random)");
         String modeName = scan.next();
         GeneratingMode mode = createSortingMode(modeName);
 
-        double[] array = generateArray();
+        /**
+         * выводит на экран несортированный массив
+         */
+        double[] array = generateArray(mode);
         System.out.println(Arrays.toString(array));
 
         System.out.println("Chose sorting function (bubble or insert)");
-
         String funcName = scan.next();
-        Sorting func = createSortingFunc(funcName);
+        Sorting func = createSortingAlg(funcName);
 
         double[] result = applySortingFunction(func, array);
-        System.out.println("array sorted" + Arrays.toString(result));
+        System.out.println("array sorted " + Arrays.toString(result));
 
     }
 
@@ -29,7 +31,7 @@ public class TestSorting {
         return res;
     }
 
-    private static Sorting createSortingFunc(String func) {
+    private static Sorting createSortingAlg(String func) {
         switch (func) {
             case "insert":
                 return new InsertSort();
@@ -44,13 +46,16 @@ public class TestSorting {
         switch (mode) {
             case "manual":
                 return new ManualMode();
+            case "random":
+                return new RandomMode();
             default:
                 throw new IllegalArgumentException("Unknown mode" + mode);
 
         }
     }
 
-    private static double[] generateArray() {
+    private static double[] generateArray(GeneratingMode mode) {
+        double[] arrayGen = mode.generatingArray(mode);
         //double[] arrayGen = {15, 3, 65, 6, 34, 22, 21};
         return arrayGen;
     }

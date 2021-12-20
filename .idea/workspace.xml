@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ceab12b-b57c-4ca8-8376-94c2108ac8f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/task/sorting/GeneratingMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/FirstIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/FirstIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/InsertSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/InsertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/InsertSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/Sorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/TestSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/TestSorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,8 @@
       <workItem from="1639645432523" duration="3322000" />
       <workItem from="1639708078798" duration="824000" />
       <workItem from="1639710450797" duration="6567000" />
-      <workItem from="1639720073486" duration="7502000" />
+      <workItem from="1639720073486" duration="8199000" />
+      <workItem from="1639989725495" duration="8143000" />
     </task>
     <servers />
   </component>
