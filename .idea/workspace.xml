@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ceab12b-b57c-4ca8-8376-94c2108ac8f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/out/production/task_1/task_1/number/Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/out/production/task_1/task_1/number/Array.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/InsertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/InsertSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/Sorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_2/task/sorting/TestSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_2/task/sorting/TestSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -90,7 +86,8 @@
       <workItem from="1639708078798" duration="824000" />
       <workItem from="1639710450797" duration="6567000" />
       <workItem from="1639720073486" duration="8199000" />
-      <workItem from="1639989725495" duration="8143000" />
+      <workItem from="1639989725495" duration="9488000" />
+      <workItem from="1640063038590" duration="8025000" />
     </task>
     <servers />
   </component>

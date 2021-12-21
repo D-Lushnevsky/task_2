@@ -11,11 +11,8 @@ public class TestSorting {
         String modeName = scan.next();
         GeneratingMode mode = createSortingMode(modeName);
 
-        /**
-         * выводит на экран несортированный массив
-         */
         double[] array = generateArray(mode);
-        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));                      //выводит несортированный(начальный) массив
 
         System.out.println("Chose sorting function (bubble or insert)");
         String funcName = scan.next();
