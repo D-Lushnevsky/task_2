@@ -1,5 +1,5 @@
 package task.sorting;
 
 public interface Sorting {
-    double[] SortingFunction(double[] arrayIn);
+    double[] sortingFunction(double[] arrayIn);
 }

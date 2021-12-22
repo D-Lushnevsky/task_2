@@ -2,7 +2,7 @@ package task.sorting;
 
 public class InsertSort implements Sorting {
     @Override
-    public double[] SortingFunction(double[] arrayIn) {
+    public double[] sortingFunction(double[] arrayIn) {
         for (int i = 0; i < arrayIn.length; i++) {
             double value = arrayIn[i];
             int j = i - 1;
