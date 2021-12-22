@@ -14,7 +14,7 @@ public class TestSorting {
         double[] array = generateArray(mode);
         System.out.println(Arrays.toString(array));                      //выводит несортированный(начальный) массив
 
-        System.out.println("Chose sorting function (bubble or insert)");
+        System.out.println("Chose sorting function (bubble, insert or quick)");
         String funcName = scan.next();
         Sorting func = createSortingAlg(funcName);
 
@@ -34,6 +34,8 @@ public class TestSorting {
                 return new InsertSort();
             case "bubble":
                 return new BubbleSort();
+            case "quick":
+                return new QuickSort();
             default:
                 throw new IllegalArgumentException("Unknown type" + func);
         }
