@@ -1,9 +1,10 @@
 package task.sorting;
 
 public class BubbleSort implements Sorting {
-    boolean isSorted = true;
+
     @Override
     public void sortingFunction(double[] array) {
+        boolean isSorted = true;
         while(isSorted) {
             isSorted = false;
 

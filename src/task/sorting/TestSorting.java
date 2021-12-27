@@ -4,12 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class TestSorting {
+
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Chose array generating mode (manual or random)");
         String modeName = scan.next();
         GeneratingMode mode = createSortingMode(modeName);
+
+        System.out.println("Input array size");
+        int size = scan.nextInt();
 
         double[] array = mode.generatingArray(mode);
         System.out.println(Arrays.toString(array));                      //выводит несортированный(начальный) массив

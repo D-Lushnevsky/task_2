@@ -3,30 +3,25 @@ package array.list;
 
 public class ArrayClass implements ProcessingArray {
     int size = 10;
-    int sizeAfter = 0;
     Double[] array = new Double[size];
-    //
-
 
     @Override
-    public void deleteElements(Double[] arraySorting) {
+    public Double[] deleteElements(Double[] arraySorting) {
+        int sizeAfter = 0;
+        int j = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= 0.5) {
-                sizeAfter ++;
+                sizeAfter++;
             }
-        }
-    }
 
-    public Double[] returnArrayNew () {
+        }
         Double[] arrayNew = new Double[sizeAfter];
-        int i = 0;
-        int j = 0;
-        for ( i = 0; i < array.length; i ++) {
-            if (array[i] < 0.5) {
-                arrayNew[j] = array[i];
-                j ++;
+        for (int k = 0; k <= array.length-1; k++) {
+            if (array[k] < 0.5) {
+                arrayNew[j] = array[k];
+                j++;
             }
         }
-        return arrayNew;
+        return  arrayNew;
     }
 }

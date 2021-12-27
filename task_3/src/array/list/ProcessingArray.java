@@ -1,5 +1,5 @@
 package array.list;
 
 public interface ProcessingArray {
-    void deleteElements(Double[] arraySorting);
+    Double[] deleteElements(Double[] arraySorting);
 }

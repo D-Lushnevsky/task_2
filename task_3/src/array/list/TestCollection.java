@@ -28,9 +28,10 @@ public class TestCollection {
         array1.array = generateArray();
         System.out.println("\n" + "Initial Array " + "\n " + Arrays.toString(array1.array));
 
-        array1.deleteElements(array1.array);
-       // array1.returnArrayNew();
-        System.out.println("\n" + "Deleted elements from Array " + "\n " + Arrays.toString(array1.returnArrayNew()));
+
+
+        System.out.println("\n" + "Deleted elements from Array " + "\n "
+                + Arrays.toString(array1.deleteElements(array1.array)));
 
     }
 
