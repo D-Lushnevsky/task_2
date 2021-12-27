@@ -38,8 +38,7 @@ public class QuickSort implements Sorting {
     }
 
     @Override
-    public double[] sortingFunction(double[] arrayIn) {
-        quick(arrayIn,0, arrayIn.length-1);
-        return arrayIn;
+    public void sortingFunction(double[] array) {
+        quick(array,0, array.length-1);
     }
 }

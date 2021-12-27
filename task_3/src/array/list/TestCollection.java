@@ -9,28 +9,18 @@ public class TestCollection {
     public static void main(String args[]) {
 
         ArrayListClass list1 = new ArrayListClass();
-        /**
-         * добавил буфер по избежании постоянных преобразований из List в array и наоборот
-         * как альтернативу можно использовать методы: asList() и toArray()
-         */
+
         Double[] arrayListBuff = generateArray();
         list1.arrayListNum = new ArrayList<>(Arrays.asList(arrayListBuff));
 
         System.out.println("Initial ArrayList ");
-        for (int i = 0; i < size; i++) {
-            System.out.print("  " + list1.arrayListNum.get(i));
-        }
+        System.out.print("  " + list1.arrayListNum);
 
-        list1.sorting(arrayListBuff);
-        System.out.println("\n" + "Sorting ArrayList ");
-        for (int i = 0; i < size; i++) {
-            System.out.print("  " + list1.arrayListNum.get(i));
-        }
+
 
         list1.deleteElements(arrayListBuff);
         System.out.println("\n" + "Deleted elements from ArrayList ");
-            System.out.print("  " + list1.arrayListNum);
-
+        System.out.print("  " + list1.arrayListNum);
 
 
 
@@ -38,12 +28,9 @@ public class TestCollection {
         array1.array = generateArray();
         System.out.println("\n" + "Initial Array " + "\n " + Arrays.toString(array1.array));
 
-        array1.sorting(array1.array);
-        System.out.println("\n" + "Sorting Array " + "\n " + Arrays.toString(array1.array));
-        //   Double[] array = new Double[size];
-        //  array = generateArray();
-        //  System.out.println("Initial Array " + "\n " + Arrays.toString(array));
-
+        array1.deleteElements(array1.array);
+       // array1.returnArrayNew();
+        System.out.println("\n" + "Deleted elements from Array " + "\n " + Arrays.toString(array1.returnArrayNew()));
 
     }
 

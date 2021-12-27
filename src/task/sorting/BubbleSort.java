@@ -1,23 +1,23 @@
 package task.sorting;
 
 public class BubbleSort implements Sorting {
-    boolean isSorted = false;
+    boolean isSorted = true;
     @Override
-    public double[] sortingFunction(double[] arrayIn) {
-        while(!isSorted) {
-            isSorted = true;
+    public void sortingFunction(double[] array) {
+        while(isSorted) {
+            isSorted = false;
 
-            for (int i = 0; i < arrayIn.length-1; i++) {
-                if (arrayIn[i] > arrayIn[i + 1]) {
-                    isSorted = false;
+            for (int i = 0; i < array.length-1; i++) {
+                if (array[i] > array[i + 1]) {
+                    isSorted = true;
 
-                    double buff = arrayIn[i];
-                    arrayIn[i] = arrayIn[i + 1];
-                    arrayIn[i + 1] = buff;
+                    double buff = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = buff;
 
                 }
             }
         }
-        return arrayIn;
+
     }
 }

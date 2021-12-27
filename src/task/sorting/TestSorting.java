@@ -11,22 +11,19 @@ public class TestSorting {
         String modeName = scan.next();
         GeneratingMode mode = createSortingMode(modeName);
 
-        double[] array = generateArray(mode);
+        double[] array = mode.generatingArray(mode);
         System.out.println(Arrays.toString(array));                      //выводит несортированный(начальный) массив
 
         System.out.println("Chose sorting function (bubble, insert or quick)");
         String funcName = scan.next();
         Sorting func = createSortingAlg(funcName);
 
-        double[] result = applySortingFunction(func, array);
+        func.sortingFunction(array);
+        double[] result = array;
         System.out.println("array sorted " + Arrays.toString(result));
 
     }
 
-    private static double[] applySortingFunction (Sorting func, double[] array ) {
-        double[] res =  func.sortingFunction(array);
-        return res;
-    }
 
     private static Sorting createSortingAlg(String func) {
         switch (func) {
@@ -51,12 +48,6 @@ public class TestSorting {
                 throw new IllegalArgumentException("Unknown mode" + mode);
 
         }
-    }
-
-    private static double[] generateArray(GeneratingMode mode) {
-        double[] arrayGen = mode.generatingArray(mode);
-        //double[] arrayGen = {15, 3, 65, 6, 34, 22, 21};
-        return arrayGen;
     }
 
 
