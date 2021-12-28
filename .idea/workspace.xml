@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ceab12b-b57c-4ca8-8376-94c2108ac8f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/task/sorting/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/out/production/task_1/task_1/number/Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/out/production/task_1/task_1/number/Array.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/GeneratingMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/GeneratingMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_3/src/array/list/ArrayClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_3/src/array/list/ArrayClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_3/src/array/list/ArrayListClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_3/src/array/list/ArrayListClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_3/src/array/list/ProcessingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_3/src/array/list/ProcessingArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_3/src/array/list/TestCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_3/src/array/list/TestCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,8 @@
       <workItem from="1639989725495" duration="9488000" />
       <workItem from="1640063038590" duration="8025000" />
       <workItem from="1640317181936" duration="3845000" />
-      <workItem from="1640584305721" duration="5948000" />
+      <workItem from="1640584305721" duration="6200000" />
+      <workItem from="1640675230258" duration="2197000" />
     </task>
     <servers />
   </component>
