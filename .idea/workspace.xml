@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ceab12b-b57c-4ca8-8376-94c2108ac8f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/task/sorting/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prime/numbers/TestPrimeNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/out/production/task_1/task_1/number/Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/out/production/task_1/task_1/number/Array.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/Array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/task_1/number/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/GeneratingMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/GeneratingMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/ManualMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/RandomMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/sorting/TestSorting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/task_2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,6 +72,7 @@
       <list>
         <item itemvalue="Application.TestSorting" />
         <item itemvalue="Application.TestSorting" />
+        <item itemvalue="Application.TestSorting" />
       </list>
     </recent_temporary>
   </component>
@@ -98,7 +96,7 @@
       <workItem from="1640063038590" duration="8025000" />
       <workItem from="1640317181936" duration="3845000" />
       <workItem from="1640584305721" duration="6200000" />
-      <workItem from="1640675230258" duration="2197000" />
+      <workItem from="1640675230258" duration="10874000" />
     </task>
     <servers />
   </component>

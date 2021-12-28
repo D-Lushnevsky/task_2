@@ -31,6 +31,8 @@ public class TestSorting {
 
         double value = scan.nextDouble();
         System.out.println("Index of value equal " + myBinary.searchingFunction(result, value));
+
+        //list1.arrayListNum = new ArrayList<>(Arrays.asList(arrayListBuff));
     }
 
 
