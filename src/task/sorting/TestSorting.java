@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class TestSorting {
+
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
 
@@ -11,22 +12,27 @@ public class TestSorting {
         String modeName = scan.next();
         GeneratingMode mode = createSortingMode(modeName);
 
-        double[] array = generateArray(mode);
+        System.out.println("Input array size");
+        int size = scan.nextInt();
+
+        double[] array = mode.generatingArray(size);
         System.out.println(Arrays.toString(array));                      //выводит несортированный(начальный) массив
 
         System.out.println("Chose sorting function (bubble, insert or quick)");
         String funcName = scan.next();
         Sorting func = createSortingAlg(funcName);
 
-        double[] result = applySortingFunction(func, array);
+        func.sortingFunction(array);
+        double[] result = array;
         System.out.println("array sorted " + Arrays.toString(result));
 
+        System.out.println("Input value for binary search" + Arrays.toString(result));
+        BinarySearch myBinary = new BinarySearch();
+
+        double value = scan.nextDouble();
+        System.out.println("Index of value equal " + myBinary.searchingFunction(result, value));
     }
 
-    private static double[] applySortingFunction (Sorting func, double[] array ) {
-        double[] res =  func.sortingFunction(array);
-        return res;
-    }
 
     private static Sorting createSortingAlg(String func) {
         switch (func) {
@@ -51,12 +57,6 @@ public class TestSorting {
                 throw new IllegalArgumentException("Unknown mode" + mode);
 
         }
-    }
-
-    private static double[] generateArray(GeneratingMode mode) {
-        double[] arrayGen = mode.generatingArray(mode);
-        //double[] arrayGen = {15, 3, 65, 6, 34, 22, 21};
-        return arrayGen;
     }
 
 

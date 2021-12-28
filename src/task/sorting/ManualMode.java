@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class ManualMode implements GeneratingMode {
     Scanner scan = new Scanner(System.in);
-    @Override
-    public double[] generatingArray(GeneratingMode mode) {
 
-        System.out.println("Input array size");
-        int size = scan.nextInt();
+    @Override
+    public double[] generatingArray(int size) {
 
         double[] arrayManual = new double[size];
         for (int i = 0; i < arrayManual.length; i++) {
