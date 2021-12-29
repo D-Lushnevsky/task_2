@@ -1,2 +1,4 @@
 ###Java template
-__out__/
+
+out
+.idea
