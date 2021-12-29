@@ -6,17 +6,19 @@ import java.util.List;
 
 public class TestPrimeNumbers {
     public static void main(String args[]) {
+        int first = 2;
+        int last = 1000;
+        System.out.println("Prime numbers" + Arrays.toString(generateNumbers(first, last)));
 
-        System.out.println("Prime numbers" + Arrays.toString(generateNumbers()) );
     }
 
-    private static Object[] generateNumbers() {
+    private static Object[] generateNumbers(int first, int last) {
         List<Integer> primeList = new ArrayList<>();
         boolean isPrime = true;
-        for (int i = 2; i < 101; i++) {
+        for (int i = first; i < last + 1; i++) {
             isPrime = true;
             for (int j = i - 1; j >= 2; j--) {
-                if ( i % j == 0) {
+                if (i % j == 0) {
                     isPrime = false;
                 }
             }
