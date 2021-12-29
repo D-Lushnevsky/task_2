@@ -10,15 +10,20 @@ public class TestPrimeNumbers {
         System.out.println("Prime numbers" + Arrays.toString(generateNumbers()) );
     }
 
-    private static int[] generateNumbers() {
+    private static Object[] generateNumbers() {
         List<Integer> primeList = new ArrayList<>();
-        for (int i = 3; i < 101; i++) {
+        boolean isPrime = true;
+        for (int i = 2; i < 101; i++) {
+            isPrime = true;
             for (int j = i - 1; j >= 2; j--) {
-                if ()
-
-
+                if ( i % j == 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime == true) {
+                primeList.add(i);
             }
         }
-        return null;
+        return primeList.toArray();
     }
 }
