@@ -7,7 +7,7 @@ import java.util.List;
 public class TestPrimeNumbers {
     public static void main(String args[]) {
         int first = 2;
-        int last = 1000;
+        int last = 100;
         System.out.println("Prime numbers" + Arrays.toString(generateNumbers(first, last)));
 
     }
