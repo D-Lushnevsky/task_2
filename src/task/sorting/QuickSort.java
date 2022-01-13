@@ -16,7 +16,7 @@ public class QuickSort implements Sorting {
             }
             /* Проверим, не нужно обменять местами элементы, на которые указывают маркеры */
             if (leftMarker <= rightMarker) {
-                /* Левый маркер будет меньше правого только если мы должны выполнить swap */
+                /* если левый маркер(индекс) меньше или равен правому то мы должны выполнить swap */
                 if (leftMarker < rightMarker) {
                     double buff = arrayInitial[leftMarker];
                     arrayInitial[leftMarker] = arrayInitial[rightMarker];
@@ -39,6 +39,7 @@ public class QuickSort implements Sorting {
 
     @Override
     public void sortingFunction(double[] array) {
+
         quick(array,0, array.length-1);
     }
 }
