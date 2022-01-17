@@ -1,5 +1,8 @@
 package arrays.task4;
 
+/*
+    Класс для решения задачи №2
+ */
 public class Equation {
 
 
@@ -13,43 +16,42 @@ public class Equation {
     }
 
     protected double getRoot(double a, double b) {
-        double step = 0.001;
-        if (solve(a) == 0) {
-            return a;
-        } else if (solve(b) == 0) {
-            return b;
+        double x = (b + a) / 2.0;
+        // x = Math.floor(x * 1000) / 1000;
+
+        if (solve(a) * solve(x) < 0) {
+            b = x;
+            System.out.print(x + "b ");
+        } else if (solve(b) * solve(x) < 0) {
+            a = x;
+            System.out.print(x + "a ");
         }
-        while (b - a > step) {
-            double x = (b - a) / 2.0;
 
-            if (solve(a) * solve(x) < 0) {
-                if (solve(x) == 0) {
-                    return x;
-                }
-                b = x - 0.001;
-                //getRoot(a, b);
-                System.out.print(" true");
-
-            } else if (solve(b) * solve(x) < 0) {
-                if (solve(x) == 0) {
-                    return x;
-                }
-                a = x + 0.001;
-                // getRoot(a, b);
-                System.out.print(" false");
-            } else {
-                return x;
+        if ((Math.abs(b - a) > 0.001) & (solve(a) * solve(b) < 0)) {
+            x = getRoot(a, b);
+            //  System.out.print("111");
+        } else {
+            if (solve(a) == 0) {
+                return a;
+            } else if (solve(b) == 0) {
+                return b;
             }
         }
-        return -1;
+
+        return x;
     }
 
     protected double solve(double y) {
-        // double x = (b - a) / 2;
+        //double equat = Math.pow(y, 2) - 9;
         double equat = Math.cos(Math.pow(y, 5)) + Math.pow(y, 4) - 345.3 * y - 23;
         return equat;
     }
-
-
+    /*
+    if (solve(a) == 0) {
+        return a;
+    } else if (solve(b) == 0) {
+        return b;
+    }
+*/
 }
 

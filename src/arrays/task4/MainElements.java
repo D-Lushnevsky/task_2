@@ -23,7 +23,7 @@ public class MainElements {
 
         System.out.println(eq1.getRoot(a, b));
 
-        System.out.println(step);
+       // System.out.println(step);
 
 
     }

@@ -1,5 +1,7 @@
 package arrays.task4;
-
+    /*
+    Класс для решения задачи №1
+     */
 public class Elements {
     protected double[] values = new double[5];
     protected double[] valuesWeights = new double[5];
