@@ -1,9 +1,9 @@
 package vector;
 
 public class Vectors {
-    protected final double x;
-    protected final double y;
-    protected final double z;
+    private final double x;
+    private final double y;
+    private final double z;
 
     public Vectors(double x, double y, double z) {
         this.x = x;
@@ -11,45 +11,48 @@ public class Vectors {
         this.z = z;
     }
 
-    protected static double vectorLength(Vectors vec) {
-        return Math.sqrt(vec.x * vec.x + vec.y * vec.y + vec.z * vec.z);
+    public String toString() {
+        return  x + "x; " + y + "y; " + z + "z; ";
+    }
+    public double length() {
+        return Math.sqrt(x * x + y * y + z * z);
     }
 
-    protected static double scalarProd(Vectors vec1, Vectors vec2) {
-        return (vec1.x * vec2.x) + (vec1.y * vec2.y) + (vec1.z * vec2.z);
+    public double scalarProd(Vectors vec2) {
+        return (x * vec2.x) + (y * vec2.y) + (z * vec2.z);
     }
 
-    protected static Vectors vectorsProd(Vectors vec1, Vectors vec2) {
+    public Vectors vectorsProd(Vectors vec2) {
 
-        double x = vec1.y * vec2.z - vec1.z * vec2.y;
-        double y = vec1.z * vec2.x - vec1.x * vec2.z;
-        double z = vec1.x * vec2.y - vec1.y * vec2.x;
+        double x = y * vec2.z - z * vec2.y;
+        double y = z * vec2.x - x * vec2.z;
+        double z = x * vec2.y - y * vec2.x;
         Vectors vectorsProd = new Vectors(x, y, z);
 
         return vectorsProd;
     }
 
-    protected static double cosAngle(Vectors vec1, Vectors vec2) {
-        double cos = scalarProd(vec1, vec2) / (vectorLength(vec1) * vectorLength(vec2));
+    public double cosAngle(Vectors vec2) {
+        double cos = scalarProd(vec2) / (length() * vec2.length());
         return cos;
     }
 
-    protected static Vectors vectorsSum(Vectors vec1, Vectors vec2) {
+    public Vectors vectorsSum(Vectors vec2) {
 
-        double x = vec1.x + vec2.x;
-        double y = vec1.y + vec2.y;
-        double z = vec1.z + vec2.z;
-        Vectors vectorsProd = new Vectors(x, y, z);
+        double x1 = x + vec2.x;
+        double y1 = y + vec2.y;
+        double z1 = z + vec2.z;
+        Vectors vectorsProd = new Vectors(x1, y1, z1);
 
         return vectorsProd;
     }
 
-    protected static Vectors vectorsDiff(Vectors vec1, Vectors vec2) {
+    public Vectors vectorsDiff(Vectors vec2) {
 
-        double x = vec1.x - vec2.x;
-        double y = vec1.y - vec2.y;
-        double z = vec1.z - vec2.z;
-        Vectors vectorsProd = new Vectors(x, y, z);
+        double x1 = x - vec2.x;
+        double y1 = y - vec2.y;
+        double z1 = z - vec2.z;
+        Vectors vectorsProd = new Vectors(x1, y1, z1);
 
         return vectorsProd;
     }

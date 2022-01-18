@@ -3,24 +3,28 @@ package arrays.task4;
     Класс для решения задачи №1
      */
 public class Elements {
-    protected double[] values = new double[5];
-    protected double[] valuesWeights = new double[5];
+    private double[] values ;
+    private double[] valueWeights;
 
-    protected Elements (double[] value, double[] valueWeight) {
+    public Elements (double[] value, double[] valueWeight) {
         this.values = value;
-        this.valuesWeights = valueWeight;
+        this.valueWeights = valueWeight;
     }
 
-    protected double elementsReturn (Elements e) {
+    public double elementsReturn () {   // алгоритм после Math.random не правильный переделать
         double probability = Math.random();
+        double sum = 0;
+        for (double num: valueWeights) {
+            sum += num;
+        }
 
-        if (probability < valuesWeights[0] / valuesWeights[4]) {
+        if (probability < valueWeights[0] / sum) {
             return values[0];
-        } else if (probability < valuesWeights[1] / valuesWeights[4]) {
+        } else if (probability < valueWeights[1] / sum) {
             return values[1];
-        } else if (probability < valuesWeights[2] / valuesWeights[4]) {
+        } else if (probability < valueWeights[2] / sum) {
             return values[2];
-        } else if (probability < valuesWeights[3] / valuesWeights[4]) {
+        } else if (probability < valueWeights[3] / sum) {
             return values[3];
         }
 
