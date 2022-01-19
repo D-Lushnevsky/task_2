@@ -1,6 +1,7 @@
 package vector;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MainVector {
     public static void main(String args[]) {
@@ -37,6 +38,21 @@ public class MainVector {
 
             System.out.println("Vector " + (i + 1) + ": " + array[i].toString());
         }
+
+        int m = 0;
+
+        System.out.println("Input number dimension of Vector");
+        Scanner scan = new Scanner(System.in);
+        m = scan.nextInt();
+
+        double[] numberOfDimension = new double[m];
+        Vectors randomVector = Vectors.generateArray(m, numberOfDimension);
+
+        for (int i = 0; i < m; i++) {
+            System.out.println("Vector " + Arrays.toString(randomVector.number));
+        }
+
+
 
     }
 }
