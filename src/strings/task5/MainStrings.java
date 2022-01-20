@@ -21,10 +21,7 @@ public class MainStrings {
         System.out.println(palindromeCheck(palindrome));
 
         String text = "Олег - бяка,он  шел по полю и собирал бяку, а потом сам стал как бякарак.бяка";
-        //StringBuilder text1 = new StringBuilder(text);
 
-        // System.out.println("Input the text to be checked for censorship");
-        // text = scan.nextLine();
         System.out.println(text.replaceAll("бяка", "[вырезано цензурой]"));
 
         String sentence = "бяка";
