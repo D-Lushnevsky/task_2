@@ -5,35 +5,31 @@ package arrays.task4;
  */
 public class Equation {
 
-    double a;
-    double b;
-
-    Equation(double a, double b) {
-        this.a = a;
-        this.b = b;
+    Equation() {
     }
 
-    public double getRoot() {
+    public double getRoot(double a, double b) {
+        if (b - a < 0.001) {
+            return b;
+        }
+        double middle = (b + a) / 2.0;
+        double min = solve(a);
+        double max = solve(b);
+        double mid = solve(middle);
 
-        if (solve(a) == 0) {
+        if (max == 0) {
+            return b;
+        } else if (min == 0) {
             return a;
-        } else if (solve(b) == 0) {
-            return b;
+        } else if (mid == 0) {
+            return middle;
         }
+            if (min * mid < 0) {
+                 return getRoot(a, middle);
+            } else {
+                return getRoot(middle, b);
+            }
 
-        double mid = (b + a) / 2.0;
-
-        if (Math.abs(b - a) < 0.001) {
-            return b;
-        }
-        if (solve(a) * solve(mid) < 0) {
-            b = mid;
-            return getRoot();
-        } else if (solve(b) * solve(mid) < 0) {
-            a = mid;
-            return getRoot();
-        }
-        return mid;
     }
 
     private double solve(double x) {

@@ -1,7 +1,5 @@
 package arrays.task4;
 
-import java.util.Arrays;
-
 public class MainElements {
     public static void main(String args[]) {
         double[] array = {1, 2, 3, 4, 5};
@@ -10,7 +8,7 @@ public class MainElements {
         Elements e1 = new Elements(array, arrayWeights);
 
         for (int i = 0; i < 15; i++) {
-            System.out.println(e1.elementsReturn());
+            System.out.println(e1.randomElements());
         }
        // System.out.println(Arrays.toString(e1.values));
        // System.out.println(Arrays.toString(e1.valueWeights));
@@ -19,9 +17,10 @@ public class MainElements {
         double a = 0;
         double b = 10;
 
-        Equation eq1 = new Equation(a, b);
+        Equation eq1 = new Equation();
 
-        System.out.println(eq1.getRoot());
+        System.out.println(eq1.getRoot(a, b));
+
 
     }
 

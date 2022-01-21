@@ -1,33 +1,38 @@
 package arrays.task4;
-    /*
-    Класс для решения задачи №1
-     */
-public class Elements {
-    private double[] values ;
-    private double[] valueWeights;
 
-    public Elements (double[] value, double[] valueWeight) {
+/*
+Класс для решения задачи №1
+ */
+public class Elements {
+    private double[] values;
+    private double[] valueWeights;
+    private double sum = 0;
+
+
+    public Elements(double[] value, double[] valueWeight) {
         this.values = value;
         this.valueWeights = valueWeight;
-    }
-
-    public double elementsReturn () {   // алгоритм после Math.random не правильный переделать
-        double probability = Math.random();
-        double sum = 0;
-        for (double num: valueWeights) {
+        for (double num : valueWeights) {
             sum += num;
         }
+    }
 
-        if (probability < valueWeights[0] / sum) {
-            return values[0];
-        } else if (probability < valueWeights[1] / sum) {
-            return values[1];
-        } else if (probability < valueWeights[2] / sum) {
-            return values[2];
-        } else if (probability < valueWeights[3] / sum) {
-            return values[3];
+    public double randomElements() {   // алгоритм после Math.random не правильный переделать
+        double probability = Math.random();
+        int len = values.length;
+        double initialValue = 0;
+        double position = 0;
+        int i = 0;
+
+        for (i = 0; i < len; i++) {
+            position = initialValue + (valueWeights[i] / sum);
+            initialValue = initialValue + valueWeights[i] / sum;
+
+            if (probability < position) {
+                return values[i];
+            }
         }
 
-        return values[4];
+        throw new IllegalStateException();
     }
 }
