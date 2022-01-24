@@ -13,8 +13,8 @@ public class ArrayClass implements ProcessingArray {
             if (array[i] <= 0.5) {
                 sizeAfter++;
             }
-
         }
+
         Double[] arrayNew = new Double[sizeAfter];
         for (int k = 0; k <= array.length-1; k++) {
             if (array[k] < 0.5) {

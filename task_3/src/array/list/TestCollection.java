@@ -16,19 +16,13 @@ public class TestCollection {
         System.out.println("Initial ArrayList ");
         System.out.print("  " + list1.arrayListNum);
 
-
-
         list1.deleteElements(arrayListBuff);
         System.out.println("\n" + "Deleted elements from ArrayList ");
         System.out.print("  " + list1.arrayListNum);
 
-
-
         ArrayClass array1 = new ArrayClass();
         array1.array = generateArray();
         System.out.println("\n" + "Initial Array " + "\n " + Arrays.toString(array1.array));
-
-
 
         System.out.println("\n" + "Deleted elements from Array " + "\n "
                 + Arrays.toString(array1.deleteElements(array1.array)));
