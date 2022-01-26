@@ -6,10 +6,13 @@ public class MainShape {
         Pyramid pyr1 = new Pyramid(3.25, 5.765);
         pyr1.getVolume();
 
-        //Box myBox = new Box(65.45);
+        Cylinder cyl1 = new Cylinder(23.5, 5.2);
 
+        Box myBox = new Box(65.45);
 
-       //System.out.println(myBox.add(pyr1));
+       System.out.println(myBox.add(pyr1));
+       System.out.println(myBox.add(cyl1));
+
 
     }
 }

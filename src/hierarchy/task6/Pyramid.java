@@ -10,8 +10,8 @@ public class Pyramid extends Shape {
     }
 
     public double getVolume() {
-        getVolume() = (s * h) / 3;
-        return getVolume();
+        volume = (s * h) / 3;
+        return volume;
     }
 
 }

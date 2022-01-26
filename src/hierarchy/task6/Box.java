@@ -2,11 +2,12 @@ package hierarchy.task6;
 
 public class Box extends Shape {
 
-    private double volume;
     public double getVolume () {
-        return 0;
+        return volume;
     }
-    public Box (double volume1) {
+
+    public Box (double volume) {
+        this.volume = volume;
 
     }
 
