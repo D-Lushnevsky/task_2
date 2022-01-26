@@ -22,9 +22,8 @@ public class Elements {
         int len = values.length;
         double initialValue = 0;
         double position = 0;
-        int i = 0;
 
-        for (i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             position = initialValue + (valueWeights[i] / sum);
             initialValue = initialValue + valueWeights[i] / sum;
 

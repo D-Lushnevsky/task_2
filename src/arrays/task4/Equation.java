@@ -13,22 +13,12 @@ public class Equation {
             return b;
         }
         double middle = (b + a) / 2.0;
-        double min = solve(a);
-        double max = solve(b);
-        double mid = solve(middle);
 
-        if (max == 0) {
-            return b;
-        } else if (min == 0) {
-            return a;
-        } else if (mid == 0) {
-            return middle;
+        if (solve(a) * solve(middle) < 0) {
+            return getRoot(a, middle);
+        } else {
+            return getRoot(middle, b);
         }
-            if (min * mid < 0) {
-                 return getRoot(a, middle);
-            } else {
-                return getRoot(middle, b);
-            }
 
     }
 
