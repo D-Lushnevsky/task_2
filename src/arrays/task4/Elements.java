@@ -24,8 +24,7 @@ public class Elements {
         double position = 0;
 
         for (int i = 0; i < len; i++) {
-            position = initialValue + (valueWeights[i] / sum);
-            initialValue = initialValue + valueWeights[i] / sum;
+            position = position + (valueWeights[i] / sum);
 
             if (probability < position) {
                 return values[i];

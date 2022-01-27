@@ -20,11 +20,10 @@ public class MainStrings {
         palindrome = scan.next();
         System.out.println(palindromeCheck(palindrome));
 
-        String text = "Олег - бяка,он  шел по полю и собирал бяку, а потом сам стал как бякарак.бяка";
-
-        System.out.println(text.replaceAll("бяка", "[вырезано цензурой]"));
-
+        String text = "Олег - бяка,он  шел по полю и собирал бяку, а потом сам стал как бякарак.бякабяка";
         String sentence = "бяка";
+
+        System.out.println(censorShip(text, sentence));
 
         System.out.println(numberOfOccurrences(text, sentence));
 
@@ -40,7 +39,7 @@ public class MainStrings {
         return maxString;
     }
 
-    private static String palindromeCheck(String palindrome) {
+    private static boolean palindromeCheck(String palindrome) {
         int length = palindrome.length();
         char[] palidnromeArray = new char[length];
         boolean flag = true;
@@ -56,25 +55,28 @@ public class MainStrings {
             }
         }
 
-        if (flag == true) {
-            return new String("TRUE");
-        } else {
-            return new String("FALSE");
-        }
+        return flag;
     }
 
-    /* private static String censorShip (String text) {
-         String cencorText = text.replace("бяка", "[вырезано цензурой]");
-         return cencorText;
-     }
- */
+    private static String censorShip(String text, String sentence) {
+        String textBuf = text;
+        int len = sentence.length();
+        while (textBuf.contains(sentence)) {
+            StringBuilder myText = new StringBuilder(textBuf);
+            myText.replace(myText.indexOf(sentence), myText.indexOf(sentence) + len, "[вырезано цензурой]");
+            textBuf = myText.toString();
+        }
+        return textBuf;
+    }
+
     private static int numberOfOccurrences(String text, String sentence) {
         int number = 0;
-        if (text.contains(sentence)) {
-            int withOutSent = text.replaceAll(sentence, "").length();
-            number = (text.length() - withOutSent) / sentence.length();
+        int flag = 0;
+        while (text.indexOf(sentence, number) != -1) {
+            flag += 1;
+            number = text.indexOf(sentence, number) + sentence.length();
         }
-        return number;
+        return flag;
     }
 
 }
