@@ -1,8 +1,11 @@
 package hierarchy.task6;
 
 public class Shape {
-    protected double volume;
-    private Box box;
+    private final double volume;
+
+    public Shape(double volume) {
+        this.volume = volume;
+    }
 
     public double getVolume() {
         return volume;

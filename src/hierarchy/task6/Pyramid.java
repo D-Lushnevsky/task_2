@@ -4,13 +4,16 @@ public class Pyramid extends Shape {
     private double s;
     private double h;
 
-    public Pyramid (double s, double h) {
-        volume = s * h / 3;
+    public Pyramid(double s, double h) {   // присвоить s,h  для объекта пирамид
+        super(s * h / 3);
+        this.s = s;
+        this.h = h;
     }
 
-    @Override
-    public double getVolume() {
-
-        return super.getVolume();
+    public double getSquareOfBasis() {
+        return s;
+    }
+    public double getHeight() {
+        return h;
     }
 }

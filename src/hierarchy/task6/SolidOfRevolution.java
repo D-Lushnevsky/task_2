@@ -1,10 +1,14 @@
 package hierarchy.task6;
 
 public class SolidOfRevolution extends Shape {
-    protected double radius;
+    private final double radius;   //private final
 
-    @Override
-    public double getVolume() {
-        return super.getVolume();
+    public SolidOfRevolution(double volume, double radius) {
+        super(volume);
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 }
