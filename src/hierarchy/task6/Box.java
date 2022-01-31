@@ -1,24 +1,29 @@
 package hierarchy.task6;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class Box extends Shape {
 
-    private Set<Shape> myShapes = new HashSet<Shape>();
+    private List<Shape> myShapes = new LinkedList<>();
 
     public Box(double volume) {
         super(volume);
     }
 
-    public boolean add (Shape shape) {
-        double capacity = 0;
+    public boolean add(Shape shape) {
+        double requiredCapacity = 0;
         Shape proba = shape;
         myShapes.add(shape);
         Iterator<Shape> iter = myShapes.iterator();
-        if (iter.hasNext()) {
-           capacity += iter.next().getVolume();
+        while (iter.hasNext()) {
+            requiredCapacity += iter.next().getVolume();
+        }
+        if (getVolume() >= requiredCapacity) {
+            return true;
+        } else {
+            return false;
         }
     }
+
+
 }

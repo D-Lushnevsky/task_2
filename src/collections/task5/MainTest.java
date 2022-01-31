@@ -60,7 +60,7 @@ public class MainTest {
     }
 
     public static void getElement(List<Integer> a1) {
-        for (int i = 0; i < 10_000; i++) {
+        for (int i = 0; i < 1000_000; i++) {
             int num = (int) (Math.random() * a1.size());
             a1.get(num);
         }
