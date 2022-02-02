@@ -1,8 +1,8 @@
 package hierarchy.task6;
 
 public class Pyramid extends Shape {
-    private double s;
-    private double h;
+    private final double s;
+    private final double h;
 
     public Pyramid(double s, double h) {   // присвоить s,h  для объекта пирамид
         super(s * h / 3);
