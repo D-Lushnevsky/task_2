@@ -47,7 +47,6 @@ public class MainStrings {
         for (int i = 0; i < length; i++) {
             palidnromeArray[i] = palindrome.charAt(i);
         }
-
         System.out.println(Arrays.toString(palidnromeArray));
         for (int i = 0; i < palindrome.length(); i++) {
             if (palidnromeArray[i] != palidnromeArray[length - 1 - i]) {
