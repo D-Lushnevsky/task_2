@@ -7,7 +7,6 @@ public class ManualMode implements GeneratingMode {
 
     @Override
     public double[] generatingArray(int size) {
-
         double[] arrayManual = new double[size];
         for (int i = 0; i < arrayManual.length; i++) {
             System.out.println("Input a value of i");
