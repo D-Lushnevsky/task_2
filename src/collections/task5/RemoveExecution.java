@@ -10,6 +10,13 @@ public class RemoveExecution extends ManyExecutions implements Functions{
         this.list = list;
     }
 
+    protected void setElements()
+    {
+        for (int i = 0; i < 10_000; i++) {
+            list.add(i);
+        }
+    }
+
     @Override
     protected void execute1() {
         list.remove(0);

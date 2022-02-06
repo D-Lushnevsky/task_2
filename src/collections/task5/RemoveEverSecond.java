@@ -11,6 +11,13 @@ public class RemoveEverSecond extends ManyExecutions implements Functions{
         this.list = list;
     }
 
+    protected void setElements()
+    {
+        for (int i = 0; i < 1_000; i++) {
+            list.add(i);
+        }
+    }
+
     @Override
     protected void execute1() {
         int i = 0;

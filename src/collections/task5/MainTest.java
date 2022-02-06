@@ -14,11 +14,18 @@ public class MainTest {
         SetExecution setArray = new SetExecution(1000_000, array);
         SetExecution setList = new SetExecution(1000_000, list);
 
-        GetExecution getArray = new GetExecution(100_000, array);
-        GetExecution getList = new GetExecution(10_000, list);
+        GetExecution getArray = new GetExecution(10_000, array);
+        GetExecution getList = new GetExecution(1_000, list);
 
         RemoveExecution removeArray = new RemoveExecution(5000, array);
         RemoveExecution removeList = new RemoveExecution(5000, list);
+        removeArray.setElements();
+        removeList.setElements();
+
+        RemoveEverSecond remEverSecArray = new RemoveEverSecond(1, array);
+        RemoveEverSecond remEverSecList = new RemoveEverSecond(1, list);
+        remEverSecArray.setElements();
+        remEverSecList.setElements();
 
 
 
@@ -30,6 +37,9 @@ public class MainTest {
 
         timeCheck(removeArray, "Удаление первых для array: ");
         timeCheck(removeList, "Удаление первых для list: ");
+
+        timeCheck(remEverSecArray, "Удаление каждого 2го из array: ");
+        timeCheck(remEverSecList, "Удаление каждого 2го из list: ");
 
 /*
         start = System.nanoTime();
@@ -89,7 +99,7 @@ public class MainTest {
             a1.remove(0);
         }
     }
-*/
+
     public static void removeEverSecond(List<Integer> a1) {
         int i = 0;
         Iterator<Integer> iter = a1.iterator();
@@ -101,6 +111,8 @@ public class MainTest {
             }
         }
     }
+
+     */
 
     public static void timeCheck(Functions ex, String string) {
         long start = System.nanoTime();
