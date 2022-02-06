@@ -9,7 +9,7 @@ public class MainTest {
 
         List<Integer> array = new ArrayList<>();
         List<Integer> list = new LinkedList<>();
-
+/*
         SetExecution setArray = new SetExecution(1000_000, array);
         SetExecution setList = new SetExecution(1000_000, list);
 
@@ -39,44 +39,15 @@ public class MainTest {
 
         timeCheck(remEverSecArray, "Удаление каждого 2го из array: ");
         timeCheck(remEverSecList, "Удаление каждого 2го из list: ");
+        */
+        Executions ex1 = new Executions(100_000, array, list);
 
-/*
-        start = System.nanoTime();
-        getElement(array);
-        finish = System.nanoTime();
-        System.out.println("Получение элементов из array: " + ((finish - start) / 1000_000d));
+        ex1.setElements.execute();
+        ex1.getElements.execute();
+        ex1.remElements.execute();
+        ex1.remEver2Elements.execute();
 
-        start = System.nanoTime();
-        setElement(list);
-        finish = System.nanoTime();
-        System.out.println("Добавление элементов в list: " + ((finish - start) / 1000_000d));
 
-        start = System.nanoTime();
-        getElement(list);
-        finish = System.nanoTime();
-        System.out.println("Получение элементов из list: " + ((finish - start) / 1000_000d));
-
-        start = System.nanoTime();
-        getRemove(array);
-        finish = System.nanoTime();
-        System.out.println("Удаление первых для array: " + ((finish - start) / 1000_000d));
-
-        start = System.nanoTime();
-        getRemove(list);
-        finish = System.nanoTime();
-        System.out.println("Удаление первых для list: " + ((finish - start) / 1000_000.d));
-
-        start = System.nanoTime();
-        removeEverSecond(array);
-        finish = System.nanoTime();
-        System.out.println("Удаление каждого 2го из array: " + ((finish - start) / 1000_000.d));
-
-        start = System.nanoTime();
-        removeEverSecond(list);
-        finish = System.nanoTime();
-        System.out.println("Удаление каждого 2го из list: " + ((finish - start) / 1000_000.d));
-
- */
     }
 
     /*
