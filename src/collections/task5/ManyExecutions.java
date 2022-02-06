@@ -1,6 +1,6 @@
 package collections.task5;
 
-public abstract class ManyExecutions implements Functions{
+public abstract class ManyExecutions implements Actions {
     private final int count;
 
     public ManyExecutions(int count) {

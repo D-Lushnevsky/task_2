@@ -1,5 +1,5 @@
 package collections.task5;
 
-public interface Functions {
+public interface Actions {
     void execute();
 }

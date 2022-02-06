@@ -1,7 +1,6 @@
 package collections.task5;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -114,7 +113,7 @@ public class MainTest {
 
      */
 
-    public static void timeCheck(Functions ex, String string) {
+    public static void timeCheck(Actions ex, String string) {
         long start = System.nanoTime();
         ex.execute();
         long finish = System.nanoTime();

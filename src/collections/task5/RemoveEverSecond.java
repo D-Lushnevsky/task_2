@@ -3,7 +3,7 @@ package collections.task5;
 import java.util.Iterator;
 import java.util.List;
 
-public class RemoveEverSecond extends ManyExecutions implements Functions{
+public class RemoveEverSecond extends ManyExecutions implements Actions {
     private final List<Integer> list;
 
     public RemoveEverSecond(int count, List<Integer> list) {

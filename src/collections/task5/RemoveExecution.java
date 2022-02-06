@@ -2,7 +2,7 @@ package collections.task5;
 
 import java.util.List;
 
-public class RemoveExecution extends ManyExecutions implements Functions{
+public class RemoveExecution extends ManyExecutions implements Actions {
     private final List<Integer> list;
 
     public RemoveExecution(int count, List<Integer> list) {
