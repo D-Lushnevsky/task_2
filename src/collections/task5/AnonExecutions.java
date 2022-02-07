@@ -11,7 +11,7 @@ public class AnonExecutions {
     private final List<Integer> list;
     private final int count;
 
-    public AnonExecutions(int count, List<Integer> array, List<Integer> list) {
+    public Executions(int count, List<Integer> array, List<Integer> list) {
         this.count = count;
         this.list = list;
         this.array = array;
