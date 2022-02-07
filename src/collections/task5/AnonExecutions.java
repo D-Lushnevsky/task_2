@@ -5,12 +5,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Executions {
+public class AnonExecutions {
+    /*
     private final List<Integer> array;
     private final List<Integer> list;
     private final int count;
 
-    public Executions(int count, List<Integer> array, List<Integer> list) {
+    public AnonExecutions(int count, List<Integer> array, List<Integer> list) {
         this.count = count;
         this.list = list;
         this.array = array;
@@ -107,4 +108,8 @@ public class Executions {
             System.out.println("Удаление каждого 2-го из list " + ((finish - start) / 1000_000d));
         }
     };
+
+ */
+
+
 }
