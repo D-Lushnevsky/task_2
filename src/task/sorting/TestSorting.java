@@ -43,7 +43,7 @@ public class TestSorting {
             case "bubble":
                 return new BubbleSort();
             case "quick":
-                return new QuickSort();
+                return new QuickSort() ;
             default:
                 throw new IllegalArgumentException("Unknown type" + func);
         }
