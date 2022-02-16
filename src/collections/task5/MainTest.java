@@ -59,7 +59,7 @@ public class MainTest {
         },0, true, "Удаление каждого 2-го элемента из array ");
 
         timeCheck(() -> {
-            Iterator<Integer> iter = list.iterator();
+            iter = list.iterator();
         },0, true, "Удаление каждого 2-го элемента из list ");
 
     }
