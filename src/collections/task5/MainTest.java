@@ -16,40 +16,38 @@ public class MainTest {
 
         //  timeCheck(new SomeRealClass(array, list), "");      /* при использовании какого либо класса из package в параметрах*/
 
-        timeCheck(new Action() {
-            @Override
-            public void execute() {
-                array.add(1);
+        timeCheck("Добавление элементов ", list, array, action -> {
+            for (int i = 0; i < 1000_000; ++i) {
+                action.add(i);
             }
-        }, 100_000, false, "Добавление элементов в array ");
+        });
 
-        timeCheck(() -> {
-                list.add(1);
-        },100_000, false, "Добавление элементов в list ");
-
-        timeCheck(new Action() {
-            @Override
-            public void execute() {
-                    int num = (int) (Math.random() * array.size());
-                    array.get(num);
+        timeCheck("Извлечение элементов ", list, array, action -> {
+            for (int i = 0; i < 10_000; ++i) {
+                int num = (int) (Math.random() * action.size());
+                action.get(num);
             }
-        },10_000, false, "Извлечение элементов из array ");
+        });
 
-        timeCheck(() -> {
-                int num = (int) (Math.random() * list.size());
-                list.get(num);
-        },10_000, false, "Извлечение элементов из list ");
-
-        timeCheck(new Action() {
-            @Override
-            public void execute() {
-                    array.remove(0);
+        timeCheck("Удаление элементов ", list, array, action -> {
+            for (int i = 0; i < 5_000; ++i) {
+                action.remove(0);
             }
-        },50_000, false, "Удаление элементов из array ");
+        });
 
-        timeCheck(() -> {
-                list.remove(0);
-        },50_000, false, "Удаление элементов из list ");
+        timeCheck("Удаление каждого 2 элемента ", list, array, action -> {
+            int i = 0;
+            Iterator<Integer> iter = action.iterator();
+            while (iter.hasNext()) {
+                i++;
+                if (i % 2 == 0) {
+                    iter.next();
+                    iter.remove();
+                }
+            }
+        });
+/*
+
 
         timeCheck(new Action() {
             @Override
@@ -62,25 +60,19 @@ public class MainTest {
             iter = list.iterator();
         },0, true, "Удаление каждого 2-го элемента из list ");
 
+ */
+
     }
 
-    public static void timeCheck(Action action, int count, boolean iterFlag, String string) {
+    private static final int TIMES = 100;
+    public static void timeCheck(String name, List<Integer> list, List<Integer> array, Action action) {
         long start = System.nanoTime();
-        if (iterFlag) {
-            action.execute();
-            while (iter.hasNext()) {
-                count++;
-                if (count % 2 == 0) {
-                    iter.next();
-                    iter.remove();
-                }
-            }
-        } else {
-            for (int i = 0; i < count; i++) {
-                action.execute();
-            }
-        }
+        action.execute(list);
         long finish = System.nanoTime();
-        System.out.println(string + ((finish - start) / 1000_000d));
+        System.out.println("List: " + name + ((finish - start) / 1000_000d));
+        start = System.nanoTime();
+        action.execute(array);
+        finish = System.nanoTime();
+        System.out.println("Array: " + name + ((finish - start) / 1000_000d));
     }
 }
