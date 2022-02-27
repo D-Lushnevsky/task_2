@@ -46,21 +46,6 @@ public class MainTest {
                 }
             }
         });
-/*
-
-
-        timeCheck(new Action() {
-            @Override
-            public void execute() {
-                iter = array.iterator();
-            }
-        },0, true, "Удаление каждого 2-го элемента из array ");
-
-        timeCheck(() -> {
-            iter = list.iterator();
-        },0, true, "Удаление каждого 2-го элемента из list ");
-
- */
 
     }
 
